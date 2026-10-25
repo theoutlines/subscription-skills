@@ -1,5 +1,5 @@
 ---
-name: apple-ads-subscription-apps-2026
+name: search-ads-subscription-apps-2026
 description: Answer questions from Adapty's Apple Ads for Subscription Apps 2026 report: Apple Ads vs other paid channels, install-to-trial and install-to-paid by country and category, year-1 LTV, cost per paying subscriber, CPT/CPA/TTR/CR benchmarks across 90 countries and 59 niches, Custom Product Page uplift and keyword-matched paywall uplift.
 ---
 

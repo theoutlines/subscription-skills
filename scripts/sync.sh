@@ -10,7 +10,7 @@ for pair in \
   state-of-web2app-2026:state-of-web2app-2026-skill \
   state-of-app-monetization-2026:state-of-app-monetization-2026-skill \
   subscription-pricing-index:adapty-pricing-index-skill \
-  apple-ads-subscription-apps-2026:apple-ads-subscription-apps-2026-skill \
+  search-ads-subscription-apps-2026:apple-ads-subscription-apps-2026-skill \
   paywall-store-compliance:paywall-store-compliance-skill \
   subscription-benchmarks:subscription-benchmarks-skill; do
   skill="${pair%%:*}"; repo="${pair##*:}"

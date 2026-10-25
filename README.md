@@ -14,7 +14,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `state-of-web2app-2026` | Web funnels: conversion, web pricing, upsells, web vs app LTV, payments | [FunnelFox](https://funnelfox.com/state-of-web2app-2026) |
 | `state-of-app-monetization-2026` | Subscription vs IAP vs ads growth, D90 ARPU/ARPPU, revenue timing, paid vs organic | [AppsFlyer](https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/) |
 | `subscription-pricing-index` | Weekly, monthly and annual prices in 64 countries vs the US | [Adapty Pricing Index](https://adapty.io/app-subscription-pricing-index/) |
-| `apple-ads-subscription-apps-2026` | Apple Ads funnel, cost per payer vs LTV by country, 59-niche benchmarks, CPP and tailored-paywall uplift | [Adapty Apple Ads](https://adapty.io/apple-ads-for-subscription-apps/) |
+| `search-ads-subscription-apps-2026` | Apple Ads funnel, cost per payer vs LTV by country, 59-niche benchmarks, CPP and tailored-paywall uplift | [Adapty Apple Ads](https://adapty.io/apple-ads-for-subscription-apps/) |
 | `paywall-store-compliance` | Will this paywall, trial or cancel flow pass App Review and Play policy? Gives a check-by-check table with fixes | Apple Guidelines, HIG, Google Play policy |
 
 Also pairs well with [Adapty's State of Paywalls 2026 skill](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill), which covers paywall-level conversion and design audits.

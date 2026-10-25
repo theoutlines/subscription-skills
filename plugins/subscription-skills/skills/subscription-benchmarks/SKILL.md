@@ -16,7 +16,7 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 | `state-of-paywalls-2026-by-adapty` | Adapty, State of Paywalls 2026 | **Paywall-level** conversion, paywall design patterns, A/B test ideas, paywall screenshot audits |
 | `state-of-web2app-2026` | FunnelFox, State of Web2App 2026 | Web funnels: adoption, funnel conversion, web pricing, upsells, web vs app LTV, payment methods, failures and retries |
 | `subscription-pricing-index` | Adapty Pricing Index | **Localized price points** for weekly, monthly and annual plans in 64 countries vs the US |
-| `apple-ads-subscription-apps-2026` | Adapty, Apple Ads 2026 | Apple Ads funnel by country and niche, CPT/CPA/TTR/CR, cost per payer vs LTV, CPP and keyword-matched paywall uplift |
+| `search-ads-subscription-apps-2026` | Adapty, Apple Ads 2026 | Apple Ads funnel by country and niche, CPT/CPA/TTR/CR, cost per payer vs LTV, CPP and keyword-matched paywall uplift |
 | `state-of-app-monetization-2026` | AppsFlyer | Subscription vs IAP vs ads growth, D90 ARPU/ARPPU, revenue timing, paid vs organic share, hybrid monetization (skews to gaming) |
 | `paywall-store-compliance` | Apple and Google rules | Will this paywall, trial or cancel flow pass App Review or Play policy? |
 
