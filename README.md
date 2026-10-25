@@ -63,6 +63,8 @@ npx skills add theoutlines/subscription-skills
 
 Found a mistake? Open an issue.
 
+License: original text and analysis under [CC BY 4.0](LICENSE). Report data belongs to its publishers; see [NOTICE](NOTICE.md).
+
 ## Maintainers
 
 The bundled skills are copies of the standalone repos. To update, run `scripts/sync.sh`, bump the version in both manifests, and commit.
