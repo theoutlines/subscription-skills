@@ -1,5 +1,5 @@
 ---
-name: adapty-pricing-index
+name: subscription-pricing-index
 description: Answer questions from Adapty's Pricing Index (2024–2025): what users actually pay for weekly, monthly and annual app subscriptions in 64 countries vs the US baseline. Use for localizing subscription prices, regional price tiers, and checking a price against country medians.
 ---
 
