@@ -17,7 +17,19 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `search-ads-subscription-apps-2026` | Apple Ads funnel, cost per payer vs LTV by country, 59-niche benchmarks, CPP and tailored-paywall uplift | [Adapty Apple Ads](https://adapty.io/apple-ads-for-subscription-apps/) |
 | `paywall-store-compliance` | Will this paywall, trial or cancel flow pass App Review and Play policy? Gives a check-by-check table with fixes | Apple Guidelines, HIG, Google Play policy |
 
-Also pairs well with [Adapty's State of Paywalls 2026 skill](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill), which covers paywall-level conversion and design audits.
+## Works well with
+
+Three skills by Victoria Kharlan (Adapty) complement this bundle. The `subscription-benchmarks` router uses them when they're installed. They are maintained by their author and are **not** bundled here, so install them from their repos:
+
+| Skill | What it adds | Install (Claude Code) |
+|---|---|---|
+| [paywall-teardown](https://github.com/vkharlan-adapt/paywall-teardown) | Scores a paywall screenshot out of 100 across 6 dimensions, gives ranked A/B test ideas and an annotated report card | `/plugin marketplace add vkharlan-adapt/paywall-teardown` then `/plugin install paywall-teardown@adapty` |
+| [paywall-ab-test-assistant](https://github.com/vkharlan-adapt/paywall-ab-test-assistant) | Grades a test idea or ranks a backlog against A/B tests run on Adapty, with an evidence-strength label | `/plugin marketplace add vkharlan-adapt/paywall-ab-test-assistant` then `/plugin install paywall-ab-test-assistant@adapty` |
+| [state-of-paywalls-2026-skill](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill) | Paywall-level conversion benchmarks from 78,000+ paywalls and design audits | see repo |
+
+Both plugin repos use the marketplace name `adapty`. If Claude Code refuses the second `marketplace add` because the name is taken, copy that skill's `skills/<name>/` folder into `~/.claude/skills/` instead.
+
+**A full paywall review** combines `paywall-teardown` (score and test ideas) with `paywall-store-compliance` (App Store and Google Play rules).
 
 ## Install
 

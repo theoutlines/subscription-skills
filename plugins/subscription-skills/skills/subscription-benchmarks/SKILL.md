@@ -19,8 +19,15 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 | `search-ads-subscription-apps-2026` | Adapty, Apple Ads 2026 | Apple Ads funnel by country and niche, CPT/CPA/TTR/CR, cost per payer vs LTV, CPP and keyword-matched paywall uplift |
 | `state-of-app-monetization-2026` | AppsFlyer | Subscription vs IAP vs ads growth, D90 ARPU/ARPPU, revenue timing, paid vs organic share, hybrid monetization (skews to gaming) |
 | `paywall-store-compliance` | Apple and Google rules | Will this paywall, trial or cancel flow pass App Review or Play policy? |
+| `paywall-teardown` (third-party, by Adapty) | Paywall pattern library + 100-point rubric | Score a paywall screenshot across 6 dimensions, ranked A/B test ideas, annotated report card |
+| `paywall-ab-test-assistant` (third-party, by Adapty) | Evidence library of A/B tests run on Adapty | Grade one test idea, rank a test backlog, or find where to start, with an evidence-strength label for each answer |
 
 If a listed skill isn't installed, say which one would answer the question and answer from the others.
+
+Install links for the third-party skills (MIT, maintained by their author; not part of this bundle):
+- `paywall-teardown`: https://github.com/vkharlan-adapt/paywall-teardown
+- `paywall-ab-test-assistant`: https://github.com/vkharlan-adapt/paywall-ab-test-assistant
+- `state-of-paywalls-2026-by-adapty`: https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill
 
 ## Routing table
 
@@ -37,8 +44,9 @@ If a listed skill isn't installed, say which one would answer the question and a
 | "Should we move purchases to web?" | **FunnelFox** | Adapty In-App (web paywalls), AppsFlyer (organic share) |
 | "Which countries to buy Apple Ads in?" | **Apple Ads** | Pricing Index (what users pay there), SOSA region LTV |
 | "LTV window: is D7 enough to judge?" | AppsFlyer (revenue timing) | Adapty In-App (LTV curves) |
-| "Will this paywall get rejected?" | **paywall-store-compliance** | State of Paywalls for conversion impact |
-| "Full paywall review" | paywall-store-compliance **and** State of Paywalls | Pricing Index for the prices shown |
+| "Will this paywall get rejected?" | **paywall-store-compliance** | paywall-teardown or State of Paywalls for conversion impact |
+| "Full paywall review" | **paywall-teardown** (score + test ideas) **and** paywall-store-compliance (rules) | State of Paywalls (conversion benchmarks), Pricing Index (the prices shown) |
+| "Is this A/B test idea worth running?" / "Rank our test backlog" | **paywall-ab-test-assistant** | The report skill that covers the metric the test should move |
 
 ## Metric definitions: never mix denominators
 
@@ -70,4 +78,5 @@ If a listed skill isn't installed, say which one would answer the question and a
 
 1. Find the gap: the user's metric versus the benchmark median.
 2. Suggest 2–3 tests, ranked by expected impact. Cite the benchmark delta behind each one. For example: "tailored paywall by keyword: +41.5% install→trial (Adapty Apple Ads)".
-3. Run every proposed paywall change through `paywall-store-compliance` before recommending it.
+3. If `paywall-ab-test-assistant` is installed, grade each idea with it and show its evidence-strength label next to the benchmark delta.
+4. Run every proposed paywall change through `paywall-store-compliance` before recommending it.
