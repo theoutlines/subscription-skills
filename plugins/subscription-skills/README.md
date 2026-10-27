@@ -10,4 +10,14 @@
 
 Start with `subscription-benchmarks` for any "is our number good / what should we test" question. Use `paywall-store-compliance` to review a paywall screenshot or Figma frame.
 
+## Install
+
+Claude Code:
+
+```
+/plugin install subscription-skills --marketplace theoutlines/subscription-skills
+```
+
+In the Claude apps, add it from the plugin directory.
+
 Unofficial. All report data belongs to its publishers. Full docs and sources: https://github.com/theoutlines/subscription-skills
