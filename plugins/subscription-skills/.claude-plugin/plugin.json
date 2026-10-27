@@ -1,7 +1,7 @@
 {
   "name": "subscription-skills",
   "displayName": "Subscription Skills",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Subscription-app monetization toolkit: 2026 benchmark reports (RevenueCat, Adapty, FunnelFox, AppsFlyer), localized pricing, Apple Ads, a benchmark router and an App Store / Google Play paywall compliance review.",
   "author": {
     "name": "Ivan Polushin",
@@ -19,5 +19,6 @@
     "app-store",
     "google-play"
   ],
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "icon": "./.claude-plugin/icon.jpg"
 }
