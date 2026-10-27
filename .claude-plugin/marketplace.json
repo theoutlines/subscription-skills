@@ -10,7 +10,7 @@
       "name": "subscription-skills",
       "source": "./plugins/subscription-skills",
       "description": "All 8 skills in one plugin: benchmarks (RevenueCat, Adapty, FunnelFox, AppsFlyer), Pricing Index, Apple Ads, router and paywall store compliance.",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "category": "productivity"
     }
   ]
