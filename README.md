@@ -4,6 +4,8 @@ Claude skills for **subscription-app monetization**: benchmarks from the 2026 in
 
 Made by a monetization design lead for day-to-day work on paywalls, onboarding, pricing and growth experiments.
 
+**Works with:** Claude Code as a one-install plugin, the Claude app (upload each skill), and any agent that supports the open [Agent Skills](https://agentskills.io) format, such as Codex, Gemini CLI, Cursor and GitHub Copilot. See [Install](#install).
+
 ## What's inside
 
 | Skill | What it answers | Source |
@@ -34,7 +36,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 /plugin install subscription-skills@theoutlines-subscription-skills
 ```
 
-**Any agent (Claude Code, Cursor, Codex and others) via the [skills CLI](https://skills.sh):**
+**Other agents (Codex, Gemini CLI, Cursor, GitHub Copilot and others) via the [skills CLI](https://skills.sh):**
 
 ```
 npx skills add theoutlines/subscription-skills

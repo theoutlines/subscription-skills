@@ -11,6 +11,8 @@
 
 Start with `subscription-benchmarks` for any "is our number good / what should we test" question. Share a paywall screenshot for `paywall-teardown` (score and test ideas) and `paywall-store-compliance` (store rules). Ask `paywall-ab-test-assistant` whether a test idea is worth running.
 
+The skills also work outside Claude, in any agent that supports [Agent Skills](https://agentskills.io): `npx skills add theoutlines/subscription-skills`.
+
 ## Install
 
 Claude Code:
