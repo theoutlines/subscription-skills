@@ -17,7 +17,7 @@ Use it for anything about **web-to-app (web2app) subscription funnels**: acquiri
 2. **Numbers first, short.** Lead with the benchmark, then 2–4 supporting points. No preamble.
 3. **Only use numbers from this file.** If the report doesn't cover something, say so and give the closest thing it does cover. Never invent a number and present it as the report's.
 4. **Mind what each number is.** Most data is FunnelFox platform data (web funnels and web payments) plus Meta Ads Library parsing for market-size charts. Say which. Many charts don't state sample size, period granularity or whether values are means or medians; when the report doesn't say, don't claim it.
-5. **Charts beat the report's text.** The PDF's prose contradicts its own charts in several places (see *Errata*). Quote the chart value.
+5. **Text vs chart.** When the report's prose and its own charts or tables disagree: if the text is provably wrong (the arithmetic doesn't work, it copies another section's numbers, or it contradicts the report's own table), use the data value and say the text is in error. Otherwise give both: the text figure first, as the publisher's stated number, then the chart value, and say they differ. Don't silently pick one. See Errata.
 6. **Vendor caveat.** FunnelFox sells web2app funnels and web payments. Headline claims ("web converts 2× better", "upsells lift LTV", web LTV > app LTV) come from a party that benefits from them. Present them as the report's findings, not settled fact, especially when the person is deciding whether to move to web.
 7. **Cite once per answer:** "FunnelFox, State of Web2App 2026". Add the link when they want to read more.
 
@@ -192,7 +192,7 @@ The weekly chart's x-axis unit isn't labelled (the text implies periods). 3-mont
 - Region revenue: text says Europe 12% and APAC 6.6%; the chart shows Europe 14.2% and APAC 7.7%.
 - Category growth: text says AI Tools, Language Learning, Astrology and Nutrition show "triple-digit growth"; the chart axis tops out at 70% and those bars are ~12–21%.
 - Plan mix: text says monthly captures "48.8% of all subscriptions"; the chart is labelled revenue share.
-- Upsells: the headline says +20% LTV, the bullet says "x2 revenue lift", and the chart shows >200%. These are incompatible; report the chart and note the inconsistency.
+- Upsells: the headline says +20% LTV, the bullet says "x2 revenue lift", and the chart shows >200%. These are incompatible; give all three and say so.
 - Pricing index example: Turkey 0.29 ("3.5× cheaper") and Netherlands 1.62 don't match the per-plan charts (Turkey 0.70 monthly and 1.45 annual; Netherlands 1.09 monthly).
 - Cancellation heatmap: text says "for annual plans price matters less", but annual cancellation reaches 37.99% at $40–50. The weekly $40–50 cell (0.00%) is likely missing data.
 - Refund charts (region by revenue, region by transaction, time to refund) carry the title "Average renewal cycles per plan" and a copy-pasted bullet about billing cycles; the titles are wrong, the data are refunds.

@@ -18,7 +18,7 @@ Use it when someone wants to benchmark download → trial, trial → paid, downl
 3. **Only use numbers from this file.** If something isn't covered (a single country, a category outside the 11 buckets, paywall-view conversion), say so and give the closest thing. Never invent a number and present it as the report's.
 4. **Pick the right slice.** Benchmarks swing hugely by category × region × price tier × plan length. If the person didn't say, give the overall number and note what shifts it; ask for the missing piece only if it changes the answer a lot.
 5. **Cite once per answer:** "RevenueCat, State of Subscription Apps 2026". Add the link when they want to read more.
-6. **Charts beat the report's own text.** The PDF's prose summaries contain copy-paste errors (see *Errata*). Every number in the data appendix was read from the charts. When the two disagree, quote the chart value.
+6. **Text vs chart.** Every number in the data appendix was read from the charts. When the report's prose and its own charts or tables disagree: if the text is provably wrong (the arithmetic doesn't work, it copies another section's numbers, or it contradicts the report's own table), use the data value and say the text is in error. Otherwise give both: the text figure first, as the publisher's stated number, then the chart value, and say they differ. Don't silently pick one. See Errata.
 7. **Medians, not averages.** Box charts show p10 / p25 / median / p75 / p90. In this file cells read **p25 / median / p75 / p90** unless marked "med". "Typical app" = median, "top quartile" = above p75, "top 10%" = above p90.
 8. **Time frame:** target period is calendar 2025 (some renewal metrics use 2024 cohorts). Data: 115,000+ apps, $16B+ revenue, 1B+ transactions, iOS + Android + web, apps using RevenueCat. Older than Adapty's State of Paywalls 2026 (Oct 2025 – Sep 2026).
 
@@ -585,7 +585,7 @@ Time to paid by category × region: share of paid conversions by time since inst
 
 ## Errata (where the PDF's text contradicts its own charts)
 
-Quote the chart values used in this file, and mention the discrepancy if the person cites the text version.
+Provably wrong text (use the data, flag the text): the copy-pasted category summaries, the Shopping page titled "Productivity", and the AI summary's "trial-to-paid" label. For the rest, give the text figure first and the chart figure next to it.
 - Category-breakout summaries reuse other categories' numbers: Business, Gaming and Health & Fitness summaries quote Education's figures ($39.15 NA / $33.07 WEU / $68.95 high / $9.48 low). Shopping and Social summaries quote Productivity's ($24.89 / $24.63 / $16.63 / $24.79 vs $36.25). Shopping's summary page is even titled "Productivity".
 - p85 text says Productivity is 77% yearly and Health & Fitness is monthly-heavy; the chart shows the reverse (Productivity 76.7% **monthly**, H&F 68.4% **annual**).
 - p40 text: Productivity Y1 RLTV $24.95 and Education $22.82; chart: $22.03 and $27.28.

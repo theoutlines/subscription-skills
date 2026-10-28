@@ -19,7 +19,7 @@ Unofficial. Not made or endorsed by Adapty. All data belongs to Adapty.
   2. Round to the local store price point.
   3. Tell the user to validate with an A/B test.
 - Adapty's own guidance: check market presence, conversion signals, PMF, local competitors and market dynamics. Don't blindly trust Apple's or Google's suggested local prices.
-- Where the report's text and its charts disagree, quote the charts (see Errata).
+- Every text-vs-chart conflict in this report is provable from the report's own price data (see Errata), so use the price data and say the text is in error.
 - Columns marked *derived* were computed for this skill from the report's prices. They are not printed in the report.
 
 ## Methodology

@@ -11,7 +11,7 @@ Unofficial. Not made or endorsed by AppsFlyer. All data belongs to AppsFlyer.
 ## How to answer
 
 - Cite the number with its exact definition (ARPU vs ARPPU, Day 90 vs Day 60, revenue share vs share of apps vs share of accounts). The report mixes per-install, per-payer and per-account metrics.
-- **Charts beat text.** Where the report's prose and its charts disagree, quote the chart value and mention the text value (see Errata). The biggest gap is the gaming monetization mix.
+- **Text vs chart.** When the report's prose and its own charts or tables disagree: if the text is provably wrong (the arithmetic doesn't work, it copies another section's numbers, or it contradicts the report's own table), use the data value and say the text is in error. Otherwise give both: the text figure first, as the publisher's stated number, then the chart value, and say they differ. Don't silently pick one. See Errata. The biggest gap is the gaming monetization mix.
 - AppsFlyer is an attribution platform (MMP). The sample skews toward apps buying paid UA and toward **gaming**: IAA revenue in the sample is ~4× IAP+IAS combined. Say so when someone generalizes to subscription apps.
 - IAP and IAS figures are **store revenue only** (App Store + Google Play). Web payments are excluded.
 - Subscription specifics (trial conversion, prices, renewals, churn) are **not** in this report. Point to RevenueCat SOSA, Adapty or FunnelFox benchmarks for those.
@@ -204,7 +204,7 @@ Measured from line charts (±1pp), calibrated so Day 60 = 100%. The calibrated v
 | Casual | 38% | 27% | **35%** |
 | Hypercasual | 9% | **55%** | 36% |
 
-The text gives different values; see Errata. Use the chart. The direction is the same in both:
+The text gives different values; see Errata. Give the text figure and the chart figure together. The direction is the same in both:
 - Midcore is the most IAP-led genre.
 - Hypercasual is the most IAA-led.
 - Casual is the most diversified.
@@ -254,7 +254,7 @@ The text gives different values; see Errata. Use the chart. The direction is the
 
 ## Errata / inconsistencies in the report
 
-1. **Gaming monetization mix:** text and chart disagree. Quote the chart.
+1. **Gaming monetization mix:** text and chart disagree, and neither is provably wrong. Give both.
 
    | Genre | Text | Chart |
    |---|---|---|
