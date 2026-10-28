@@ -1,0 +1,147 @@
+{
+  "subtitle": "Fitness app · onboarding paywall",
+  "verdict": "Clean and readable, but nothing tells the user which plan to pick, what yearly saves, or why to trust it.",
+  "score": {
+    "dimensions": [
+      {
+        "key": "value",
+        "label": "Value clarity",
+        "score": 2,
+        "max": 20
+      },
+      {
+        "key": "pricing",
+        "label": "Pricing clarity",
+        "score": 10,
+        "max": 20
+      },
+      {
+        "key": "hierarchy",
+        "label": "Visual hierarchy",
+        "score": 7,
+        "max": 20
+      },
+      {
+        "key": "trust",
+        "label": "Trust & proof",
+        "score": 0,
+        "max": 15
+      },
+      {
+        "key": "cta",
+        "label": "CTA",
+        "score": 6,
+        "max": 15
+      },
+      {
+        "key": "offer",
+        "label": "Offer & nudges",
+        "score": 3,
+        "max": 10
+      }
+    ]
+  },
+  "strengths": [
+    "Billing period on both plans",
+    "Short feature lines",
+    "CTA in the thumb zone"
+  ],
+  "items": [
+    {
+      "n": 1,
+      "priority": "High",
+      "pattern": "Plan visual hierarchy",
+      "test": "Make Yearly the filled, pre-selected card and move it to the left slot.",
+      "impact": "CR +5–15%, ARPU +3–8%",
+      "pin": {
+        "x": 0.73,
+        "y": 0.7,
+        "type": "change"
+      }
+    },
+    {
+      "n": 2,
+      "priority": "High",
+      "pattern": "Annual savings visualization",
+      "test": "Add “$1.15/week · Save 83%” under the Yearly price.",
+      "impact": "CR +5–15%, ARPU +10–15%",
+      "pin": {
+        "x": 0.73,
+        "y": 0.765,
+        "type": "add"
+      }
+    },
+    {
+      "n": 3,
+      "priority": "High",
+      "pattern": "Social proof at decision point",
+      "test": "Add your App Store rating with a user count in one line just above the CTA.",
+      "impact": "CR +10–15%, ARPU +2–5%",
+      "pin": {
+        "x": 0.2,
+        "y": 0.865,
+        "type": "add"
+      }
+    },
+    {
+      "n": 4,
+      "priority": "Medium",
+      "pattern": "Legal / boilerplate collapse",
+      "test": "Move the renewal paragraph below the CTA behind a “Subscription terms” link.",
+      "impact": "CR +5–8%, ARPU +1–3%",
+      "pin": {
+        "x": 0.5,
+        "y": 0.82,
+        "type": "change"
+      }
+    },
+    {
+      "n": 5,
+      "priority": "Medium",
+      "pattern": "CTA quality",
+      "test": "Swap “Continue” for “Start My Plan”, go full-width and make it the darkest element.",
+      "impact": "CR +3–8%",
+      "pin": {
+        "x": 0.8,
+        "y": 0.9,
+        "type": "change"
+      }
+    },
+    {
+      "n": 6,
+      "priority": "Medium",
+      "pattern": "Outcome-based value copy",
+      "test": "Cut to four bullets and rewrite each as a result, e.g. “A plan that adapts after every workout”.",
+      "impact": "CR +3–8%, ARPU +1–3%",
+      "pin": {
+        "x": 0.08,
+        "y": 0.53,
+        "type": "change"
+      }
+    },
+    {
+      "n": 7,
+      "priority": "Low",
+      "pattern": "Hero image / video",
+      "test": "Replace the abstract gradient with a progress visual: a week of workouts filling in.",
+      "impact": "CR +5–10%, ARPU +2–5%",
+      "pin": {
+        "x": 0.5,
+        "y": 0.225,
+        "type": "change"
+      }
+    },
+    {
+      "n": 8,
+      "priority": "Low",
+      "pattern": "Trust signals near CTA",
+      "test": "Add “Cancel anytime in Settings” directly under the CTA.",
+      "impact": "CR +3–8%, ARPU +1–3%",
+      "pin": {
+        "x": 0.5,
+        "y": 0.935,
+        "type": "add"
+      }
+    }
+  ]
+}

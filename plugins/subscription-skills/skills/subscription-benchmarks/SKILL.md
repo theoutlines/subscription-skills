@@ -19,15 +19,12 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 | `search-ads-subscription-apps-2026` | Adapty, Apple Ads 2026 | Apple Ads funnel by country and niche, CPT/CPA/TTR/CR, cost per payer vs LTV, CPP and keyword-matched paywall uplift |
 | `state-of-app-monetization-2026` | AppsFlyer | Subscription vs IAP vs ads growth, D90 ARPU/ARPPU, revenue timing, paid vs organic share, hybrid monetization (skews to gaming) |
 | `paywall-store-compliance` | Apple and Google rules | Will this paywall, trial or cancel flow pass App Review or Play policy? |
-| `paywall-teardown` (third-party, by Adapty) | Paywall pattern library + 100-point rubric | Score a paywall screenshot across 6 dimensions, ranked A/B test ideas, annotated report card |
-| `paywall-ab-test-assistant` (third-party, by Adapty) | Evidence library of A/B tests run on Adapty | Grade one test idea, rank a test backlog, or find where to start, with an evidence-strength label for each answer |
+| `paywall-teardown` (by Adapty, bundled) | Paywall pattern library + 100-point rubric | Score a paywall screenshot across 6 dimensions, ranked A/B test ideas, annotated report card |
+| `paywall-ab-test-assistant` (by Adapty, bundled) | Evidence library of A/B tests run on Adapty | Grade one test idea, rank a test backlog, or find where to start, with an evidence-strength label for each answer |
 
 If a listed skill isn't installed, say which one would answer the question and answer from the others.
 
-Install links for the third-party skills (MIT, maintained by their author; not part of this bundle):
-- `paywall-teardown`: https://github.com/vkharlan-adapt/paywall-teardown
-- `paywall-ab-test-assistant`: https://github.com/vkharlan-adapt/paywall-ab-test-assistant
-- `state-of-paywalls-2026-by-adapty`: https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill
+`paywall-teardown` and `paywall-ab-test-assistant` are by Adapty (MIT) and ship in this plugin. `state-of-paywalls-2026-by-adapty` is installed separately: https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill
 
 ## Routing table
 

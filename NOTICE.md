@@ -11,6 +11,8 @@ The benchmark figures summarized in the skills come from third-party reports and
 
 These reports are copyrighted by their publishers, and this license does not cover them. Get the originals from the links in the README.
 
+`paywall-teardown` and `paywall-ab-test-assistant` are © 2026 Adapty Tech Inc., licensed under the MIT License (see the `LICENSE` file in each skill folder), and included unchanged except that the bundled Inter fonts in `paywall-teardown` are subset to Latin characters (Inter is under the SIL Open Font License 1.1, see `OFL.txt`). Originals: https://github.com/vkharlan-adapt/paywall-teardown and https://github.com/vkharlan-adapt/paywall-ab-test-assistant
+
 The store-compliance skill paraphrases Apple's and Google's public developer policies, which belong to Apple Inc. and Google LLC.
 
 All product and company names are trademarks of their respective owners. This project is unofficial and not affiliated with or endorsed by any of them.
