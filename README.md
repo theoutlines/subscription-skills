@@ -44,7 +44,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 npx skills add theoutlines/subscription-skills
 ```
 
-**Claude.ai / Claude desktop:** download this repo, zip each folder in `plugins/subscription-skills/skills/` separately, and upload each one in Settings → Capabilities → Skills.
+**Claude app (web, desktop):** download the zip files from the [latest release](https://github.com/theoutlines/subscription-skills/releases/latest), then upload each one in Settings → Capabilities → Skills. Start with `subscription-benchmarks`.
 
 **Just one skill?** Each skill also has its own repo:
 
