@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/assets/character.png" alt="Subscription Skills character" width="240"></p>
+
 # Subscription Skills for Claude
 
 Claude skills for **subscription-app monetization**: benchmarks from the 2026 industry reports, localized pricing, Apple Ads economics, a router that keeps metric definitions apart, and a paywall review against App Store and Google Play rules.
