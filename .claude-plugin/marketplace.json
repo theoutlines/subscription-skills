@@ -1,6 +1,6 @@
 {
   "name": "theoutlines-subscription-skills",
-  "description": "Claude skills for subscription-app monetization: benchmark reports, pricing, Apple Ads and paywall compliance.",
+  "description": "Claude skills for subscription-app monetization: benchmark reports, pricing, paywall teardown and paywall compliance.",
   "owner": {
     "name": "Ivan Polushin",
     "url": "https://github.com/theoutlines"
@@ -9,8 +9,8 @@
     {
       "name": "subscription-skills",
       "source": "./plugins/subscription-skills",
-      "description": "All 10 skills in one plugin: benchmarks (RevenueCat, Adapty, FunnelFox, AppsFlyer), Pricing Index, Apple Ads, router, paywall store compliance, plus Adapty's paywall teardown and A/B test assistant.",
-      "version": "1.1.1",
+      "description": "All 8 skills in one plugin: benchmarks (RevenueCat, Adapty, FunnelFox), Pricing Index, router, paywall store compliance, plus Adapty's paywall teardown and A/B test assistant.",
+      "version": "1.2.0",
       "category": "productivity"
     }
   ]

@@ -1,10 +1,9 @@
 # Subscription Skills
 
-10 skills for subscription-app monetization:
+8 skills for subscription-app monetization:
 
-- **Benchmarks:** RevenueCat SOSA 2026, Adapty State of In-App Subscriptions 2026, FunnelFox Web2App 2026, AppsFlyer App Monetization 2026
+- **Benchmarks:** RevenueCat SOSA 2026, Adapty State of In-App Subscriptions 2026, FunnelFox Web2App 2026
 - **Pricing:** the Adapty Pricing Index (64 countries)
-- **Acquisition:** Adapty Apple Ads 2026
 - **Routing:** a benchmark router that keeps metric definitions apart
 - **Compliance:** a paywall review against App Store and Google Play subscription rules
 - **Paywall teardown and A/B tests:** Adapty's paywall teardown and A/B test assistant (MIT, © Adapty Tech Inc.)

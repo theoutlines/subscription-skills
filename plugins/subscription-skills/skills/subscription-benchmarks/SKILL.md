@@ -1,6 +1,6 @@
 ---
 name: subscription-benchmarks
-description: Router for subscription-app benchmark questions (conversion, trials, pricing, LTV, retention, paywalls, web2app, Apple Ads, store compliance). Picks the right report skill, keeps metric definitions apart, and combines sources without mixing denominators. Use for any "is X good / what's normal / what should we test" question about subscription monetization.
+description: Router for subscription-app benchmark questions (conversion, trials, pricing, LTV, retention, paywalls, web2app, store compliance). Picks the right report skill, keeps metric definitions apart, and combines sources without mixing denominators. Use for any "is X good / what's normal / what should we test" question about subscription monetization.
 ---
 
 # Subscription benchmarks — router
@@ -16,8 +16,6 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 | `state-of-paywalls-2026-by-adapty` | Adapty, State of Paywalls 2026 | **Paywall-level** conversion, paywall design patterns, A/B test ideas, paywall screenshot audits |
 | `state-of-web2app-2026` | FunnelFox, State of Web2App 2026 | Web funnels: adoption, funnel conversion, web pricing, upsells, web vs app LTV, payment methods, failures and retries |
 | `subscription-pricing-index` | Adapty Pricing Index | **Localized price points** for weekly, monthly and annual plans in 64 countries vs the US |
-| `search-ads-subscription-apps-2026` | Adapty, Apple Ads 2026 | Apple Ads funnel by country and niche, CPT/CPA/TTR/CR, cost per payer vs LTV, CPP and keyword-matched paywall uplift |
-| `state-of-app-monetization-2026` | AppsFlyer | Subscription vs IAP vs ads growth, D90 ARPU/ARPPU, revenue timing, paid vs organic share, hybrid monetization (skews to gaming) |
 | `paywall-store-compliance` | Apple and Google rules | Will this paywall, trial or cancel flow pass App Review or Play policy? |
 | `paywall-teardown` (by Adapty, bundled) | Paywall pattern library + 100-point rubric | Score a paywall screenshot across 6 dimensions, ranked A/B test ideas, annotated report card |
 | `paywall-ab-test-assistant` (by Adapty, bundled) | Evidence library of A/B tests run on Adapty | Grade one test idea, rank a test backlog, or find where to start, with an evidence-strength label for each answer |
@@ -38,22 +36,21 @@ If a listed skill isn't installed, say which one would answer the question and a
 | "Hard paywall vs freemium?" | SOSA (access method), Adapty In-App (hard vs soft) | State of Paywalls |
 | "Onboarding paywall vs contextual placement?" | Adapty In-App (placement), State of Paywalls | — |
 | "Expected refund rate / renewal rate / churn?" | SOSA | Adapty In-App, FunnelFox (web) |
-| "Should we move purchases to web?" | **FunnelFox** | Adapty In-App (web paywalls), AppsFlyer (organic share) |
-| "Which countries to buy Apple Ads in?" | **Apple Ads** | Pricing Index (what users pay there), SOSA region LTV |
-| "LTV window: is D7 enough to judge?" | AppsFlyer (revenue timing) | Adapty In-App (LTV curves) |
+| "Should we move purchases to web?" | **FunnelFox** | Adapty In-App (web paywalls) |
+| "LTV window: is D7 enough to judge?" | Adapty In-App (LTV curves by month) | SOSA (realized LTV) |
 | "Will this paywall get rejected?" | **paywall-store-compliance** | paywall-teardown or State of Paywalls for conversion impact |
 | "Full paywall review" | **paywall-teardown** (score + test ideas) **and** paywall-store-compliance (rules) | State of Paywalls (conversion benchmarks), Pricing Index (the prices shown) |
 | "Is this A/B test idea worth running?" / "Rank our test backlog" | **paywall-ab-test-assistant** | The report skill that covers the metric the test should move |
 
 ## Metric definitions: never mix denominators
 
-| Metric as people say it | RevenueCat SOSA | Adapty In-App | Adapty Paywalls | FunnelFox | AppsFlyer | Adapty Apple Ads |
-|---|---|---|---|---|---|---|
-| "Conversion" | per **install** (D35 download→paid) or per **trial start** | per **install** (install→trial, install→paid; per-app averages) | per **paywall view** | per **web funnel visitor / step** | per **installer**, buyers within 30 days (incl. one-time IAP) | App Store **tap→download** (CR); in-app install→trial / paid |
-| "Trial conversion" | trial→paid | trial→paid | trial→paid | web trial→paid | — | trial→paid (relative uplift only) |
-| "LTV" | realized LTV per payer (net) | LTV per **install** or per payer, by month (gross) | — | web vs app LTV | D90 ARPU (per installer) / ARPPU (per payer), store-only | year-1 LTV per paying user from Apple Ads |
-| "Price" | average price by tier | price distributions (box plots) | price shown on paywalls | web prices and price index | — | — |
-| Revenue basis | net of store fees and refunds (realized) | gross | — | web gross | gross store revenue | — |
+| Metric as people say it | RevenueCat SOSA | Adapty In-App | Adapty Paywalls | FunnelFox |
+|---|---|---|---|---|
+| "Conversion" | per **install** (D35 download→paid) or per **trial start** | per **install** (install→trial, install→paid; per-app averages) | per **paywall view** | per **web funnel visitor / step** |
+| "Trial conversion" | trial→paid | trial→paid | trial→paid | web trial→paid |
+| "LTV" | realized LTV per payer (net) | LTV per **install** or per payer, by month (gross) | — | web vs app LTV |
+| "Price" | average price by tier | price distributions (box plots) | price shown on paywalls | web prices and price index |
+| Revenue basis | net of store fees and refunds (realized) | gross | — | web gross |
 
 **Rules**
 1. Quote each number with its **source and denominator**. For example: "trial→paid 39.7% (SOSA, H&F, North America median)".
@@ -74,6 +71,6 @@ If a listed skill isn't installed, say which one would answer the question and a
 ## Answer pattern for "what should we test?"
 
 1. Find the gap: the user's metric versus the benchmark median.
-2. Suggest 2–3 tests, ranked by expected impact. Cite the benchmark delta behind each one. For example: "tailored paywall by keyword: +41.5% install→trial (Adapty Apple Ads)".
+2. Suggest 2–3 tests, ranked by expected impact. Cite the benchmark delta behind each one. For example: "a 7-day trial instead of 3 days: trial→paid is 37.4% for 5–9-day trials vs 25.5% for trials of 4 days or less (SOSA)".
 3. If `paywall-ab-test-assistant` is installed, grade each idea with it and show its evidence-strength label next to the benchmark delta.
 4. Run every proposed paywall change through `paywall-store-compliance` before recommending it.

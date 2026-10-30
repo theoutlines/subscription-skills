@@ -1,8 +1,8 @@
 {
   "name": "subscription-skills",
   "displayName": "Subscription Skills",
-  "version": "1.1.1",
-  "description": "Subscription-app monetization toolkit: 2026 benchmark reports (RevenueCat, Adapty, FunnelFox, AppsFlyer), localized pricing, Apple Ads, a benchmark router, an App Store / Google Play paywall compliance review, and Adapty's paywall teardown and A/B test assistant.",
+  "version": "1.2.0",
+  "description": "Subscription-app monetization toolkit: 2026 benchmark reports (RevenueCat, Adapty, FunnelFox), localized pricing, a benchmark router, an App Store / Google Play paywall compliance review, and Adapty's paywall teardown and A/B test assistant.",
   "author": {
     "name": "Ivan Polushin",
     "url": "https://github.com/theoutlines"
@@ -15,7 +15,6 @@
     "monetization",
     "benchmarks",
     "pricing",
-    "apple-ads",
     "app-store",
     "google-play"
   ],

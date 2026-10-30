@@ -1,25 +1,11 @@
 #!/usr/bin/env bash
-# Pull the latest SKILL.md from each standalone skill repo into the bundled plugin.
+# Pull Adapty's two skills (MIT, (c) Adapty Tech Inc.) from upstream into the bundled plugin.
+# Our own skills are edited directly in plugins/subscription-skills/skills/.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$ROOT/plugins/subscription-skills/skills"
 TMP="$(mktemp -d)"
-for pair in \
-  state-of-subscription-apps-2026:state-of-subscription-apps-2026-skill \
-  state-of-in-app-subscriptions-2026:state-of-in-app-subscriptions-2026-skill \
-  state-of-web2app-2026:state-of-web2app-2026-skill \
-  state-of-app-monetization-2026:state-of-app-monetization-2026-skill \
-  subscription-pricing-index:adapty-pricing-index-skill \
-  search-ads-subscription-apps-2026:apple-ads-subscription-apps-2026-skill \
-  paywall-store-compliance:paywall-store-compliance-skill \
-  subscription-benchmarks:subscription-benchmarks-skill; do
-  skill="${pair%%:*}"; repo="${pair##*:}"
-  git clone -q --depth 1 "https://github.com/theoutlines/$repo" "$TMP/$repo"
-  rm -rf "${DEST:?}/$skill"
-  cp -r "$TMP/$repo/skills/$skill" "$DEST/$skill"
-  echo "synced $skill"
-done
-# Adapty skills (MIT, (c) Adapty Tech Inc.): copy with their LICENSE, then subset fonts (raw Inter TTFs trip the directory scanner)
+# Copy with their LICENSE, then subset fonts (raw Inter TTFs trip the directory scanner)
 for skill in paywall-teardown paywall-ab-test-assistant; do
   git clone -q --depth 1 "https://github.com/vkharlan-adapt/$skill" "$TMP/$skill"
   rm -rf "${DEST:?}/$skill"
