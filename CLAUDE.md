@@ -14,7 +14,7 @@ A Claude marketplace and plugin, `subscription-skills`: the paywall and its numb
 
 ## Rules
 - Public sources only; never employer data. Never invent a number; every figure keeps its source and denominator (per install vs per trial start vs per paywall view vs per web visitor). Each report skill keeps an Errata section.
-- Bump `version` in plugin.json and the marketplace entry on every release. The owner publishes GitHub releases with one zip per skill (this session can't create releases). Repo settings (About, topics) are changed through the owner's signed-in Chrome.
+- Bump `version` in plugin.json and the marketplace entry on every release, and add `.github/release-notes/vX.Y.Z.md`. Pushing the version change to main runs `.github/workflows/release.yml`, which zips each skill and publishes the release (tag pushes and the releases API are blocked from this session). Repo settings (About, topics) are changed through the owner's signed-in Chrome.
 - Run `claude plugin validate .` and `claude plugin validate plugins/subscription-skills` before every push.
 
 ## Status (Oct 2026)

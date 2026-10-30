@@ -1,0 +1,52 @@
+name: Release
+
+# A release is published when the plugin version changes on main.
+# The tag and the release are created here, from plugin.json.
+on:
+  push:
+    branches: [main]
+    paths: ["plugins/subscription-skills/.claude-plugin/plugin.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: echo "tag=v$(jq -r .version plugins/subscription-skills/.claude-plugin/plugin.json)" >> "$GITHUB_OUTPUT"
+      - name: Skip if the release exists
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "${{ steps.v.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Zip each skill
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          mkdir -p dist
+          cd plugins/subscription-skills/skills
+          for d in */; do
+            s="${d%/}"
+            zip -qr "../../../dist/$s.zip" "$s" -x '*/__pycache__/*' '*.DS_Store'
+          done
+      - name: Publish release
+        if: steps.check.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.v.outputs.tag }}
+        run: |
+          notes=".github/release-notes/$TAG.md"
+          if [ -f "$notes" ]; then
+            gh release create "$TAG" dist/*.zip --target "$GITHUB_SHA" --title "$TAG" --notes-file "$notes"
+          else
+            gh release create "$TAG" dist/*.zip --target "$GITHUB_SHA" --title "$TAG" --generate-notes
+          fi
