@@ -23,6 +23,8 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 
 ## Works well with
 
+[Growth Skills](https://github.com/theoutlines/growth-skills) adds screen teardowns for the rest of the user's journey: web funnel, onboarding, upsells, the first weeks before renewal and the cancel flow. It installs Subscription Skills with it.
+
 [State of Paywalls 2026](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill) by Adapty adds paywall-level conversion benchmarks from 78,000+ paywalls. The router uses it when it's installed.
 
 **A full paywall review** combines `paywall-teardown` (score and test ideas) with `paywall-store-compliance` (App Store and Google Play rules).
