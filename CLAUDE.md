@@ -4,7 +4,7 @@ A Claude marketplace and plugin, `subscription-skills`: the paywall and its numb
 
 ## Product split (agreed 2026-10-30)
 - This plugin = the paywall and the testing mechanics around it: benchmark reports (RevenueCat SOSA 2026, Adapty State of In-App Subscriptions 2026, FunnelFox Web2App 2026), Adapty Pricing Index, `subscription-benchmarks` router, `paywall-store-compliance`, and Adapty's `paywall-teardown` and `paywall-ab-test-assistant`. Self-contained: one install, everything included.
-- Growth work beyond the paywall (onboarding, flow, upsell, retention, cancel flow, web2app) lives in theoutlines/growth-skills. Its marketplace lists this plugin by `git-subdir` and depends on it, so edits here reach both products. Keep the plugin path `plugins/subscription-skills` stable.
+- Growth work beyond the paywall (onboarding, flow, upsell, retention, cancel flow, web2app) lives in theoutlines/growth-skills, which is private and paid since 2026-11-07 and copies these skills in before each release. This plugin stays free and public; never link to growth-skills from here. Keep the plugin path `plugins/subscription-skills` stable.
 - Removed for good: Apple Ads and AppsFlyer skills (not designer work), Recurly. Standalone per-skill repos are deleted.
 
 ## Layout
