@@ -2,7 +2,7 @@
 
 # Subscription Skills for Claude
 
-Claude skills for **subscription-app monetization**: benchmarks from the 2026 industry reports, localized pricing, a router that keeps metric definitions apart, a paywall teardown and A/B test assistant, and a paywall review against App Store and Google Play rules.
+Claude skills for **subscription-app monetization**: benchmarks from the 2026 industry reports, localized pricing, a router that keeps metric definitions apart, a paywall teardown and A/B test assistant, a paywall review against App Store and Google Play rules, and paywall rules for coding agents.
 
 Made by a monetization design lead for day-to-day work on paywalls, onboarding, pricing and growth experiments.
 
@@ -18,6 +18,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `state-of-web2app-2026` | Web funnels: conversion, web pricing, upsells, web vs app LTV, payments | [FunnelFox](https://funnelfox.com/state-of-web2app-2026) |
 | `subscription-pricing-index` | Weekly, monthly and annual prices in 64 countries vs the US | [Adapty Pricing Index](https://adapty.io/app-subscription-pricing-index/) |
 | `paywall-store-compliance` | Will this paywall, trial or cancel flow pass App Review and Play policy? Gives a check-by-check table with fixes | Apple Guidelines, HIG, Google Play policy |
+| `paywall-rules` | **Building a paywall with an agent?** What App Review and Google Play require on the screen, the patterns that won in published A/B tests and the ones that lost, each with its source. For Claude Code, Cursor and other coding agents | Apple, Google Play, published case studies |
 | `paywall-teardown` | Scores a paywall screenshot out of 100 across 6 dimensions, gives ranked A/B test ideas and an annotated report card. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/paywall-teardown) |
 | `paywall-ab-test-assistant` | Grades a test idea or ranks a backlog against A/B tests run on Adapty, with an evidence-strength label. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/paywall-ab-test-assistant) |
 
@@ -55,6 +56,7 @@ npx skills add theoutlines/subscription-skills
 - "Our H&F app: trial→paid 31%, annual $49.99, mostly US. How do we compare, and what should we test first?"
 - "What should our $9.99/month plan cost in Brazil, Germany and Japan?"
 - "Review this paywall screenshot for App Store and Google Play compliance."
+- "Build the paywall for my SwiftUI app: yearly with a 7-day trial and monthly. Follow paywall-rules."
 - "Should we move checkout to web? What do the benchmarks say about web vs app LTV?"
 
 ## Accuracy and attribution
