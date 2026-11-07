@@ -1,6 +1,6 @@
 ---
 name: paywall-rules
-description: Rules for an agent that builds or edits a subscription paywall or onboarding screen in code (SwiftUI, React Native, Flutter, web) — what App Review and Google Play require on the screen, the patterns that won in published A/B tests, and the ones that lost. Use whenever you write, change or review a paywall, trial offer, plan picker or onboarding flow for an iOS or Android subscription app, before it ships or goes to App Review.
+description: Rules for an agent that builds or edits a subscription paywall or onboarding screen in code (SwiftUI, React Native, Flutter, web) — what App Review and Google Play require on the screen, the patterns that won in published A/B tests, and the ones that lost. Use whenever you write, change or review a paywall, trial offer, plan picker or onboarding flow for an iOS or Android subscription app, before it ships or goes to App Review. Also for "my paywall isn't converting", paywall optimization, paywall design or copy, annual vs monthly, free trial or hard vs soft paywall, upgrade screens and paywall A/B test ideas, with RevenueCat, Superwall, Adapty or StoreKit paywalls. Every pattern names the published test behind it.
 ---
 
 # Paywall rules for agents
