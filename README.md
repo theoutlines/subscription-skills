@@ -19,6 +19,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `subscription-pricing-index` | Weekly, monthly and annual prices in 64 countries vs the US | [Adapty Pricing Index](https://adapty.io/app-subscription-pricing-index/) |
 | `paywall-store-compliance` | Will this paywall, trial or cancel flow pass App Review and Play policy? Gives a check-by-check table with fixes | Apple Guidelines, HIG, Google Play policy |
 | `paywall-rules` | **Building a paywall with an agent?** What App Review and Google Play require on the screen, the patterns that won in published A/B tests and the ones that lost, each with its source. For Claude Code, Cursor and other coding agents | Apple, Google Play, published case studies |
+| `credits-rules` | **Adding credits or limits with an agent?** What App Review, Google Play and EU rules require for credit packs, balances and expiring AI credits, plus the states agents tend to leave silent: failed runs, store refunds, pending purchases, restore | Apple, Google Play, EU CPC |
 | `paywall-teardown` | Scores a paywall screenshot out of 100 across 6 dimensions, gives ranked A/B test ideas and an annotated report card. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/paywall-teardown) |
 | `paywall-ab-test-assistant` | Grades a test idea or ranks a backlog against A/B tests run on Adapty, with an evidence-strength label. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/paywall-ab-test-assistant) |
 
@@ -57,6 +58,7 @@ npx skills add theoutlines/subscription-skills
 - "What should our $9.99/month plan cost in Brazil, Germany and Japan?"
 - "Review this paywall screenshot for App Store and Google Play compliance."
 - "Build the paywall for my SwiftUI app: yearly with a 7-day trial and monthly. Follow paywall-rules."
+- "Add AI credits to my app: Pro includes 200 a month, packs for top-ups. Follow credits-rules."
 - "Should we move checkout to web? What do the benchmarks say about web vs app LTV?"
 
 ## Accuracy and attribution

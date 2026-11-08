@@ -8,7 +8,7 @@ A Claude marketplace and plugin, `subscription-skills`: the paywall and its numb
 - Removed for good: Apple Ads and AppsFlyer skills (not designer work), Recurly. Standalone per-skill repos are deleted.
 
 ## Layout
-- `.claude-plugin/marketplace.json` at the root; plugin at `plugins/subscription-skills/` (9 skills). `paywall-rules` (2026-11-07): store must-haves and published wins and losses for agents that build paywalls in code; a free demand test for the Paywall Pack idea (signal: installs on skills.sh). Use only results already public in the planner (`js/data.js` TESTS) or in this repo; never copy from the private growth-skills base.
+- `.claude-plugin/marketplace.json` at the root; plugin at `plugins/subscription-skills/` (10 skills). `credits-rules` (2026-11-08): store and EU rules for credit packs, balances and Apple's expiring AI credits, plus the states coding agents leave silent (from a baseline run of two agents); public sources only. `paywall-rules` (2026-11-07): store must-haves and published wins and losses for agents that build paywalls in code; a free demand test for the Paywall Pack idea (signal: installs on skills.sh). Use only results already public in the planner (`js/data.js` TESTS) or in this repo; never copy from the private growth-skills base.
 - Our skills are edited in place in `plugins/subscription-skills/skills/`. `scripts/sync.sh` only pulls Adapty's two skills from upstream (github.com/vkharlan-adapt) and subsets their fonts.
 - Adapty's State of Paywalls is not bundled (no MIT licence yet); the router uses it when installed. Bundle it once the licence lands.
 
@@ -18,4 +18,4 @@ A Claude marketplace and plugin, `subscription-skills`: the paywall and its numb
 - Run `claude plugin validate .` and `claude plugin validate plugins/subscription-skills` before every push.
 
 ## Status (Oct 2026)
-- v1.3.0 (9 skills, + paywall-rules). v1.2.0 (8 skills). Submitted to the Anthropic directory earlier; development continues without waiting for the review.
+- v1.4.0 (10 skills, + credits-rules). v1.3.0 (9 skills, + paywall-rules). v1.2.0 (8 skills). Submitted to the Anthropic directory earlier; development continues without waiting for the review.
