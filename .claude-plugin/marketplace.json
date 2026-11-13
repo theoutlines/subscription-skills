@@ -9,8 +9,8 @@
     {
       "name": "subscription-skills",
       "source": "./plugins/subscription-skills",
-      "description": "All 9 skills in one plugin: benchmarks (RevenueCat, Adapty, FunnelFox), Pricing Index, router, paywall store compliance, paywall and credits rules for coding agents, plus Adapty's paywall teardown and A/B test assistant.",
-      "version": "1.4.0",
+      "description": "All 11 skills in one plugin: benchmarks (RevenueCat, Adapty, Adapty State of Paywalls, FunnelFox), Pricing Index, router, paywall store compliance, paywall and credits rules for coding agents, plus Adapty's paywall teardown and A/B test assistant.",
+      "version": "1.5.0",
       "category": "productivity"
     }
   ]

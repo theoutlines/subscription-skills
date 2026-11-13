@@ -16,6 +16,7 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `state-of-subscription-apps-2026` | Download→trial, trial→paid, RPI, LTV, retention, renewals and refunds, by category, region and price tier | [RevenueCat SOSA 2026](https://www.revenuecat.com/state-of-subscription-apps) |
 | `state-of-in-app-subscriptions-2026` | LTV curves, retention by plan, prices by region, trial vs direct, paywall placement, iOS vs Android, AI apps | [Adapty](https://adapty.io/state-of-in-app-subscriptions-report/) |
 | `state-of-web2app-2026` | Web funnels: conversion, web pricing, upsells, web vs app LTV, payments | [FunnelFox](https://funnelfox.com/state-of-web2app-2026) |
+| `state-of-paywalls-2026-by-adapty` | Paywall-level conversion (per paywall view) from 78,000+ paywalls: benchmarks by region and category, pricing, placement, design patterns, A/B test ideas. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill) |
 | `subscription-pricing-index` | Weekly, monthly and annual prices in 64 countries vs the US | [Adapty Pricing Index](https://adapty.io/app-subscription-pricing-index/) |
 | `paywall-store-compliance` | Will this paywall, trial or cancel flow pass App Review and Play policy? Gives a check-by-check table with fixes | Apple Guidelines, HIG, Google Play policy |
 | `paywall-rules` | **Building a paywall with an agent?** What App Review and Google Play require on the screen, the patterns that won in published A/B tests and the ones that lost, each with its source. For Claude Code, Cursor and other coding agents | Apple, Google Play, published case studies |
@@ -24,8 +25,6 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 | `paywall-ab-test-assistant` | Grades a test idea or ranks a backlog against A/B tests run on Adapty, with an evidence-strength label. By Adapty, MIT | [Adapty](https://github.com/vkharlan-adapt/paywall-ab-test-assistant) |
 
 ## Works well with
-
-[State of Paywalls 2026](https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill) by Adapty adds paywall-level conversion benchmarks from 78,000+ paywalls. The router uses it when it's installed.
 
 **A full paywall review** combines `paywall-teardown` (score and test ideas) with `paywall-store-compliance` (App Store and Google Play rules).
 

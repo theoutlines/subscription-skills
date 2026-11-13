@@ -13,7 +13,7 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 |---|---|---|
 | `state-of-subscription-apps-2026` | RevenueCat SOSA 2026 | The broadest funnel benchmarks by category, region and price tier: download→trial, trial→paid, D35 download→paid, RPI, realized LTV, retention, renewals, refunds, reactivation, AI vs non-AI |
 | `state-of-in-app-subscriptions-2026` | Adapty, State of In-App Subscriptions 2026 | LTV curves (trial vs direct), retention by plan length, price distributions by region, renewal by price bucket, refunds, paywall placement and type, iOS vs Android, AI apps, web paywalls |
-| `state-of-paywalls-2026-by-adapty` | Adapty, State of Paywalls 2026 | **Paywall-level** conversion, paywall design patterns, A/B test ideas, paywall screenshot audits |
+| `state-of-paywalls-2026-by-adapty` (by Adapty, bundled) | Adapty, State of Paywalls 2026 | **Paywall-level** conversion (per paywall view) by region and category, pricing shown on paywalls, placement, design patterns, A/B test ideas |
 | `state-of-web2app-2026` | FunnelFox, State of Web2App 2026 | Web funnels: adoption, funnel conversion, web pricing, upsells, web vs app LTV, payment methods, failures and retries |
 | `subscription-pricing-index` | Adapty Pricing Index | **Localized price points** for weekly, monthly and annual plans in 64 countries vs the US |
 | `paywall-store-compliance` | Apple and Google rules | Will this paywall, trial or cancel flow pass App Review or Play policy? |
@@ -22,7 +22,7 @@ Use this skill to decide **which benchmark source answers the question**, and ho
 
 If a listed skill isn't installed, say which one would answer the question and answer from the others.
 
-`paywall-teardown` and `paywall-ab-test-assistant` are by Adapty (MIT) and ship in this plugin. `state-of-paywalls-2026-by-adapty` is installed separately: https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill
+`paywall-teardown`, `paywall-ab-test-assistant` and `state-of-paywalls-2026-by-adapty` are by Adapty (MIT) and ship in this plugin. For a scored review of a paywall screenshot use `paywall-teardown`; State of Paywalls supplies the conversion benchmarks behind it.
 
 ## Routing table
 
@@ -74,3 +74,4 @@ If a listed skill isn't installed, say which one would answer the question and a
 2. Suggest 2–3 tests, ranked by expected impact. Cite the benchmark delta behind each one. For example: "a 7-day trial instead of 3 days: trial→paid is 37.4% for 5–9-day trials vs 25.5% for trials of 4 days or less (SOSA)".
 3. If `paywall-ab-test-assistant` is installed, grade each idea with it and show its evidence-strength label next to the benchmark delta.
 4. Run every proposed paywall change through `paywall-store-compliance` before recommending it.
+5. Never propose delaying, hiding or fading the close button, even though State of Paywalls and `paywall-ab-test-assistant` report wins for it. It is a dark pattern: say what the source reports if asked, and offer a test that earns the purchase instead.

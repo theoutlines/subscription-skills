@@ -5,12 +5,12 @@ The original text, structure, analysis, errata and tooling in this repository ar
 The benchmark figures summarized in the skills come from third-party reports and remain attributed to their publishers:
 
 - RevenueCat, *State of Subscription Apps 2026*
-- Adapty, *State of In-App Subscriptions 2026* and *Pricing Index*
+- Adapty, *State of In-App Subscriptions 2026*, *State of Paywalls 2026* and *Pricing Index*
 - FunnelFox, *State of Web2App 2026*
 
 These reports are copyrighted by their publishers, and this license does not cover them. Get the originals from the links in the README.
 
-`paywall-teardown` and `paywall-ab-test-assistant` are © 2026 Adapty Tech Inc., licensed under the MIT License (see the `LICENSE` file in each skill folder), and included unchanged except that the bundled Inter fonts in `paywall-teardown` are subset to Latin characters (Inter is under the SIL Open Font License 1.1, see `OFL.txt`). Originals: https://github.com/vkharlan-adapt/paywall-teardown and https://github.com/vkharlan-adapt/paywall-ab-test-assistant
+`paywall-teardown`, `paywall-ab-test-assistant` and `state-of-paywalls-2026-by-adapty` are © 2026 Adapty Tech Inc., licensed under the MIT License (see the `LICENSE` file in each skill folder), and included unchanged except that the bundled Inter fonts in `paywall-teardown` are subset to Latin characters (Inter is under the SIL Open Font License 1.1, see `OFL.txt`). Originals: https://github.com/vkharlan-adapt/paywall-teardown, https://github.com/vkharlan-adapt/paywall-ab-test-assistant and https://github.com/vkharlan-adapt/state-of-paywalls-2026-skill
 
 The store-compliance skill paraphrases Apple's and Google's public developer policies, which belong to Apple Inc. and Google LLC.
 
