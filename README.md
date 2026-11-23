@@ -28,6 +28,8 @@ Made by a monetization design lead for day-to-day work on paywalls, onboarding, 
 
 **A full paywall review** combines `paywall-teardown` (score and test ideas) with `paywall-store-compliance` (App Store and Google Play rules).
 
+**Planning the test itself:** the free [Growth Test Planner](https://planner.theoutlines.xyz) works out how long a paywall or onboarding test must run and the smallest change it can catch from your own traffic. Short answers with tables: [how long a paywall A/B test should run](https://planner.theoutlines.xyz/paywall-ab-test-duration/), [paywall and onboarding tests that lost](https://planner.theoutlines.xyz/ab-tests-that-lost/), [sample size for a paywall test](https://planner.theoutlines.xyz/paywall-ab-test-sample-size/), [why RevenueCat and Adapty conversion numbers differ](https://planner.theoutlines.xyz/subscription-conversion-benchmarks/).
+
 ## Install
 
 **Claude Code: everything in one plugin**
